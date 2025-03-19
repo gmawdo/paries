@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1500" height="1000" viewBox="0, 0, 1500, 1000">
+  <g id="Layer_1">
+    <g>
+      <path d="M358.032,282.611 L701.508,597.342 C705.171,600.698 705.622,606.168 702.514,609.56 L528.449,799.522 C525.342,802.914 519.853,802.942 516.19,799.585 L172.714,484.855 C169.051,481.498 168.601,476.028 171.708,472.637 L345.773,282.674 C348.881,279.283 354.369,279.254 358.032,282.611 z" fill="#EEEEEE"/>
+      <path d="M358.032,282.611 L701.508,597.342 C705.171,600.698 705.622,606.168 702.514,609.56 L528.449,799.522 C525.342,802.914 519.853,802.942 516.19,799.585 L172.714,484.855 C169.051,481.498 168.601,476.028 171.708,472.637 L345.773,282.674 C348.881,279.283 354.369,279.254 358.032,282.611 z" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="3,2"/>
+    </g>
+    <g>
+      <path d="M289.773,226.366 C270.994,226.366 255.77,210.589 255.77,191.128 C255.77,171.666 270.994,155.889 289.773,155.889 C308.552,155.889 323.775,171.666 323.775,191.128 C323.775,210.589 308.552,226.366 289.773,226.366 z" fill="#AED8E6"/>
+      <path d="M289.773,226.366 C270.994,226.366 255.77,210.589 255.77,191.128 C255.77,171.666 270.994,155.889 289.773,155.889 C308.552,155.889 323.775,171.666 323.775,191.128 C323.775,210.589 308.552,226.366 289.773,226.366 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 359.538, 105.964)">
+      <tspan x="-45.08" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">FUSE Filesystem</tspan>
+    </text>
+    <g>
+      <path d="M362.566,384.653 C343.787,384.653 328.564,368.876 328.564,349.414 C328.564,329.952 343.787,314.175 362.566,314.175 C381.345,314.175 396.569,329.952 396.569,349.414 C396.569,368.876 381.345,384.653 362.566,384.653 z" fill="#AED8E6"/>
+      <path d="M362.566,384.653 C343.787,384.653 328.564,368.876 328.564,349.414 C328.564,329.952 343.787,314.175 362.566,314.175 C381.345,314.175 396.569,329.952 396.569,349.414 C396.569,368.876 381.345,384.653 362.566,384.653 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M514.137,527.554 C495.358,527.554 480.135,511.777 480.135,492.315 C480.135,472.853 495.358,457.077 514.137,457.077 C532.916,457.077 548.14,472.853 548.14,492.315 C548.14,511.777 532.916,527.554 514.137,527.554 z" fill="#AED8E6"/>
+      <path d="M514.137,527.554 C495.358,527.554 480.135,511.777 480.135,492.315 C480.135,472.853 495.358,457.077 514.137,457.077 C532.916,457.077 548.14,472.853 548.14,492.315 C548.14,511.777 532.916,527.554 514.137,527.554 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M248.901,510 C230.122,510 214.899,494.223 214.899,474.761 C214.899,455.299 230.122,439.522 248.901,439.522 C267.68,439.522 282.904,455.299 282.904,474.761 C282.904,494.223 267.68,510 248.901,510 z" fill="#AED8E6"/>
+      <path d="M248.901,510 C230.122,510 214.899,494.223 214.899,474.761 C214.899,455.299 230.122,439.522 248.901,439.522 C267.68,439.522 282.904,455.299 282.904,474.761 C282.904,494.223 267.68,510 248.901,510 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M396.803,664.603 C378.024,664.603 362.801,648.826 362.801,629.364 C362.801,609.902 378.024,594.125 396.803,594.125 C415.582,594.125 430.806,609.902 430.806,629.364 C430.806,648.826 415.582,664.603 396.803,664.603 z" fill="#AED8E6"/>
+      <path d="M396.803,664.603 C378.024,664.603 362.801,648.826 362.801,629.364 C362.801,609.902 378.024,594.125 396.803,594.125 C415.582,594.125 430.806,609.902 430.806,629.364 C430.806,648.826 415.582,664.603 396.803,664.603 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M630.097,641.835 C611.318,641.835 596.094,626.058 596.094,606.596 C596.094,587.134 611.318,571.357 630.097,571.357 C648.876,571.357 664.099,587.134 664.099,606.596 C664.099,626.058 648.876,641.835 630.097,641.835 z" fill="#AED8E6"/>
+      <path d="M630.097,641.835 C611.318,641.835 596.094,626.058 596.094,606.596 C596.094,587.134 611.318,571.357 630.097,571.357 C648.876,571.357 664.099,587.134 664.099,606.596 C664.099,626.058 648.876,641.835 630.097,641.835 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 362.066, 348.914)">
+      <tspan x="-35.791" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Object Store</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 248.401, 474.261)">
+      <tspan x="-41.566" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Metadata Store</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 516.637, 489.345)">
+      <tspan x="-29.589" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Data Store</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 398.475, 625.835)">
+      <tspan x="-42.42" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">BFT Consensus</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 628.576, 611.817)">
+      <tspan x="-40.026" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">STARK Proofs</tspan>
+    </text>
+    <g>
+      <path d="M362.585,230.626 L362.762,316.687" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M365.585,230.62 L362.568,222.626 L359.585,230.632 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      <path d="M359.762,316.693 L362.778,324.687 L365.762,316.68 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M468.534,542.065 L429.979,582.975" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M427.795,580.917 L424.492,588.797 L432.162,585.032 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M402.13,392.875 L461.803,445.831" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M459.811,448.074 L467.786,451.141 L463.794,443.587 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M544.885,530.554 L581.997,559.968" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M580.134,562.319 L588.267,564.937 L583.861,557.617 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M581.264,627.143 L469.092,628.507" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M469.055,625.508 L461.092,628.605 L469.128,631.507 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M389.614,690.014 L389.614,752.728" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M386.614,752.728 L389.614,760.728 L392.614,752.728 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M311.784,392.875 L281.322,427.003" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M279.084,425.006 L275.995,432.972 L283.56,429.001 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M268.041,519.426 L336.277,583.37" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M334.225,585.559 L342.114,588.841 L338.328,581.181 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <text transform="matrix(-0, -1, 1, -0, 1474.561, 494.815)">
+      <tspan x="-248.737" y="4.49" font-family="Helvetica" font-size="24" fill="#000000">FUSE-based Distributed Storage over SCION</tspan>
+    </text>
+    <g>
+      <text transform="matrix(1, 0, 0, 1, 1026.168, 879.428)">
+        <tspan x="-68.208" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Zero-Trust Data Storage</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1008.976, 905.502)">
+        <tspan x="-51.016" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Ai Data Provenace</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 996.425, 929.893)">
+        <tspan x="-38.465" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Fault Tolerant</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1034.197, 954.548)">
+        <tspan x="-76.237" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Hyper-Secure Data Routing</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1022.367, 980.967)">
+        <tspan x="-64.407" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">AI-Friendly Performace</tspan>
+      </text>
+      <path d="M1135.036,870.199 L1136.272,990.967" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <text transform="matrix(1, 0, 0, 1, 1281.083, 875.827)">
+        <tspan x="-124.054" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Every read/write is crytographically verifiable</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1250.994, 903.029)">
+        <tspan x="-92.729" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Prove which data trained a model</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1284.244, 929.893)">
+        <tspan x="-125.979" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Byzantine nodes cannot compromise the data</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1320.104, 954.548)">
+        <tspan x="-164.192" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">SCION's secure path segmentation eliminates MITM attacks</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1325.05, 980.967)">
+        <tspan x="-168.021" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Optimised for parallel I/O, huge model files, fast pre-fetching</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M72.396,221.626 C53.617,221.626 38.393,205.849 38.393,186.387 C38.393,166.925 53.617,151.149 72.396,151.149 C91.175,151.149 106.398,166.925 106.398,186.387 C106.398,205.849 91.175,221.626 72.396,221.626 z" fill="#AED8E6"/>
+      <path d="M72.396,221.626 C53.617,221.626 38.393,205.849 38.393,186.387 C38.393,166.925 53.617,151.149 72.396,151.149 C91.175,151.149 106.398,166.925 106.398,186.387 C106.398,205.849 91.175,221.626 72.396,221.626 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 111.989, 185.887)">
+      <tspan x="-46.109" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">sel4 Microkernel</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 365.569, 121.556)">
+      <tspan x="-104.509" y="2.908" font-family="Gibson-Regular" font-size="14" fill="#000000">(formally verified user-space services)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 169.897, 141.149)">
+      <tspan x="-55.678" y="3.5" font-family="Gibson-RegularItalic" font-size="14" fill="#000000">capability delegation</tspan>
+    </text>
+    <g>
+      <path d="M87.052,166.628 C87.052,140.459 196.232,148.098 332.705,148.438" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      <path d="M332.701,151.438 L340.705,148.448 L332.708,145.438 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M362.566,213.626 C343.787,213.626 328.564,197.849 328.564,178.387 C328.564,158.925 343.787,143.149 362.566,143.149 C381.345,143.149 396.569,158.925 396.569,178.387 C396.569,197.849 381.345,213.626 362.566,213.626 z" fill="#AED8E6"/>
+      <path d="M362.566,213.626 C343.787,213.626 328.564,197.849 328.564,178.387 C328.564,158.925 343.787,143.149 362.566,143.149 C381.345,143.149 396.569,158.925 396.569,178.387 C396.569,197.849 381.345,213.626 362.566,213.626 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M436.133,226.366 C417.354,226.366 402.13,210.589 402.13,191.128 C402.13,171.666 417.354,155.889 436.133,155.889 C454.912,155.889 470.135,171.666 470.135,191.128 C470.135,210.589 454.912,226.366 436.133,226.366 z" fill="#AED8E6"/>
+      <path d="M436.133,226.366 C417.354,226.366 402.13,210.589 402.13,191.128 C402.13,171.666 417.354,155.889 436.133,155.889 C454.912,155.889 470.135,171.666 470.135,191.128 C470.135,210.589 454.912,226.366 436.133,226.366 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+    </g>
+    <g>
+      <path d="M272.834,139.327 L446.574,138.207" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+      <path d="M272.815,136.327 L264.834,139.379 L272.853,142.327 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      <path d="M446.593,141.206 L454.573,138.155 L446.554,135.207 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 293.057, 187.887)">
+      <tspan x="-25.516" y="-6.76" font-family="Gibson-Regular" font-size="14" fill="#000000">Metadata</tspan>
+      <tspan x="-25.516" y="11.24" font-family="Gibson-Regular" font-size="14" fill="#000000">Service</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 362.566, 178.628)">
+      <tspan x="-20.86" y="-14.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Storage</tspan>
+      <tspan x="-20.86" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Engine</tspan>
+      <tspan x="-20.86" y="21.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Service</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 436.611, 191.905)">
+      <tspan x="-22.981" y="-14.5" font-family="Gibson-Regular" font-size="14" fill="#000000">SCION</tspan>
+      <tspan x="-22.981" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Transfer</tspan>
+      <tspan x="-22.981" y="21.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Service</tspan>
+    </text>
+    <g>
+      <path d="M273.168,230.896 L446.908,229.775" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+      <path d="M273.149,227.896 L265.168,230.947 L273.188,233.896 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      <path d="M446.927,232.775 L454.908,229.724 L446.888,226.775 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 653.211, 200.398)">
+      <tspan x="-168.812" y="-40.754" font-family="Gibson-Regular" font-size="14" fill="#000000">fuse split into three services and proofs generated fot</tspan>
+      <tspan x="-168.812" y="-22.754" font-family="Gibson-Regular" font-size="14" fill="#000000">- integrity of data chunks</tspan>
+      <tspan x="-168.812" y="-4.754" font-family="Gibson-Regular" font-size="14" fill="#000000">- integrity of metadata</tspan>
+      <tspan x="-168.812" y="13.246" font-family="Gibson-Regular" font-size="14" fill="#000000">- integrity of network transfer</tspan>
+      <tspan x="-168.812" y="49.246" font-family="Gibson-Regular" font-size="14" fill="#000000">P</tspan>
+      <tspan x="-161.77" y="49.246" font-family=".SFNS-Regular" font-size="13" fill="#111111">rovides an </tspan>
+      <tspan x="-95.875" y="49.246" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">object store abstraction</tspan>
+      <tspan x="52.663" y="49.246" font-family=".SFNS-Regular" font-size="13" fill="#111111"> instead of POSIX.</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 158.848, 500)">
+      <tspan x="-35.371" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Merkle DAG</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 313.243, 654.603)">
+      <tspan x="-38.414" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Hotstuff BFT</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 751.37, 437.875)">
+      <tspan x="-174.79" y="-32.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Ai Job writes 500GB model to FUSE</tspan>
+      <tspan x="-174.79" y="-14.5" font-family="Gibson-Regular" font-size="14" fill="#000000">FS splits into 4Mb chunks</tspan>
+      <tspan x="-174.79" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Chunk generates stark proof</tspan>
+      <tspan x="-174.79" y="21.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Chunks distributed over n nodes with BFT consensus</tspan>
+      <tspan x="-174.79" y="39.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Metadata is cryptographically hashed and verified using Hotstuff</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 205.805, 774.084)">
+      <tspan x="-145.852" y="-14.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Optimal SCION path for distribution</tspan>
+      <tspan x="-145.852" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Data moves securely and avoids path hijacking</tspan>
+      <tspan x="-145.852" y="21.5" font-family="Gibson-Regular" font-size="14" fill="#000000">Data at rest remains encrypted with verified integrity</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 633.086, 928.397)">
+      <tspan x="-99.86" y="-7.268" font-family="Gibson-Regular" font-size="14" fill="#000000">nodes</tspan>
+      <tspan x="-99.86" y="10.732" font-family="Gibson-Regular" font-size="14" fill="#000000">Chunk + proof + metadata stored</tspan>
+    </text>
+    <g>
+      <g>
+        <path d="M390.599,848.642 C371.82,848.642 356.597,832.865 356.597,813.403 C356.597,793.941 371.82,778.164 390.599,778.164 C409.378,778.164 424.602,793.941 424.602,813.403 C424.602,832.865 409.378,848.642 390.599,848.642 z" fill="#AED8E6"/>
+        <path d="M390.599,848.642 C371.82,848.642 356.597,832.865 356.597,813.403 C356.597,793.941 371.82,778.164 390.599,778.164 C409.378,778.164 424.602,793.941 424.602,813.403 C424.602,832.865 409.378,848.642 390.599,848.642 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 398.156, 808.827)">
+        <tspan x="-47.621" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">SCION Network</tspan>
+      </text>
+      <g>
+        <g>
+          <path d="M303.837,958.36 C285.057,958.36 269.834,942.583 269.834,923.121 C269.834,903.659 285.057,887.882 303.837,887.882 C322.616,887.882 337.839,903.659 337.839,923.121 C337.839,942.583 322.616,958.36 303.837,958.36 z" fill="#AED8E6"/>
+          <path d="M303.837,958.36 C285.057,958.36 269.834,942.583 269.834,923.121 C269.834,903.659 285.057,887.882 303.837,887.882 C322.616,887.882 337.839,903.659 337.839,923.121 C337.839,942.583 322.616,958.36 303.837,958.36 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+        </g>
+        <g>
+          <path d="M387.704,958.36 C368.925,958.36 353.701,942.583 353.701,923.121 C353.701,903.659 368.925,887.882 387.704,887.882 C406.483,887.882 421.706,903.659 421.706,923.121 C421.706,942.583 406.483,958.36 387.704,958.36 z" fill="#AED8E6"/>
+          <path d="M387.704,958.36 C368.925,958.36 353.701,942.583 353.701,923.121 C353.701,903.659 368.925,887.882 387.704,887.882 C406.483,887.882 421.706,903.659 421.706,923.121 C421.706,942.583 406.483,958.36 387.704,958.36 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+        </g>
+        <g>
+          <path d="M474.83,958.36 C456.051,958.36 440.827,942.583 440.827,923.121 C440.827,903.659 456.051,887.882 474.83,887.882 C493.609,887.882 508.832,903.659 508.832,923.121 C508.832,942.583 493.609,958.36 474.83,958.36 z" fill="#AED8E6"/>
+          <path d="M474.83,958.36 C456.051,958.36 440.827,942.583 440.827,923.121 C440.827,903.659 456.051,887.882 474.83,887.882 C493.609,887.882 508.832,903.659 508.832,923.121 C508.832,942.583 493.609,958.36 474.83,958.36 z" fill-opacity="0" stroke="#AED8E6" stroke-width="1"/>
+        </g>
+      </g>
+      <g>
+        <path d="M389.98,845.374 L389.413,871.624" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M386.414,871.559 L389.24,879.622 L392.412,871.689 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+      <g>
+        <path d="M298.168,881.8 L471.908,880.68" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+        <path d="M298.149,878.8 L290.168,881.852 L298.187,884.8 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+        <path d="M471.927,883.68 L479.907,880.628 L471.888,877.68 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+      <text transform="matrix(1, 0, 0, 1, 297.85, 923.574)">
+        <tspan x="-3.521" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">1</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 386.442, 913.725)">
+        <tspan x="-7.77" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">.....</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 472.822, 917.434)">
+        <tspan x="-3.521" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">n</tspan>
+      </text>
+    </g>
+    <text transform="matrix(1, -0, 0, 1, 1196.218, 168.149)" opacity="0.1">
+      <tspan x="-296.853" y="-51.726" font-family="Gibson-Regular" font-size="48" fill="#FF4437">Secure by Design</tspan>
+      <tspan x="-296.853" y="10.274" font-family="Gibson-Regular" font-size="48" fill="#FF4437">Formally Verified Components</tspan>
+      <tspan x="-296.853" y="72.274" font-family="Gibson-Regular" font-size="48" fill="#FF4437">Integrity Proofs</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 751.37, 57.423)">
+      <tspan x="-261.375" y="1.93" font-family=".SFNS-Regular" font-size="18" fill="#111111">The world's most secure, scalable, and provable AI data platform</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 750, 29.967)">
+      <tspan x="-105.098" y="10.544" font-family="Gibson-Regular" font-size="36" fill="#000000">Towards Zero</tspan>
+    </text>
+    <path d="M494.495,66.923 L1008.498,66.923" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1, 0, 0, 1, 1008.728, 549.321)">
+      <tspan x="-264.149" y="-8.824" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">AI-Optimized Storage Format:</tspan>
+      <tspan x="-78.6" y="-8.824" font-family=".SFNS-Regular" font-size="13" fill="#111111"> Support efficient indexing, retrieval, and sparse updates</tspan>
+      <tspan x="-264.149" y="12.776" font-family=".SFNS-Regular" font-size="13" fill="#111111">(e.g., columnar storage, tensor-native, or graph-based formats).</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1021.22, 627.114)">
+      <tspan x="-276.641" y="-23.813" font-family=".SFNS-Regular" font-size="13" fill="#111111">Implement </tspan>
+      <tspan x="-209.26" y="-23.813" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">replication, sharding, and proof-of-availability mechanisms</tspan>
+      <tspan x="154.597" y="-23.813" font-family=".SFNS-Regular" font-size="13" fill="#111111">.</tspan>
+      <tspan x="-276.641" y="-2.213" font-family=".SFNS-Regular" font-size="13" fill="#111111">Designed to scale </tspan>
+      <tspan x="-164.96" y="-2.213" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">horizontally across nodes</tspan>
+      <tspan x="-6.087" y="-2.213" font-family=".SFNS-Regular" font-size="13" fill="#111111"> with redundancy and fault tolerance</tspan>
+      <tspan x="-276.641" y="19.387" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">Erasure coding or zk-SNARK-based proofs</tspan>
+      <tspan x="-10.622" y="19.387" font-family=".SFNS-Regular" font-size="13" fill="#111111"> for distributed integrity verification.</tspan>
+    </text>
+    <text transform="matrix(-0, -1, 1, -0, 36.453, 321.905)">
+      <tspan x="-243.153" y="-10.553" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">Capability-based access control</tspan>
+      <tspan x="-43.395" y="-10.553" font-family=".SFNS-Regular" font-size="13" fill="#111111"> for fine-grained permissions.</tspan>
+      <tspan x="-243.153" y="13.047" font-family=".SFNS-Regular" font-size="13" fill="#111111">Prevent data exfiltration via </tspan>
+      <tspan x="-73.988" y="13.047" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">formally verified IPC</tspan>
+      <tspan x="51.384" y="13.047" font-family=".SFNS-Regular" font-size="13" fill="#111111"> between storage and compute.</tspan>
+    </text>
+    <text transform="matrix(0.745, 0.667, -0.667, 0.745, 420.725, 534.383)">
+      <tspan x="-214.786" y="-19.824" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">Formally verified key-value store</tspan>
+      <tspan x="-13.065" y="-19.824" font-family=".SFNS-Regular" font-size="13" fill="#111111"> (like a verified LevelDB/RocksDB).</tspan>
+      <tspan x="-214.786" y="1.776" font-family=".SFNS-Regular" font-size="13" fill="#111111">Distributed coordination via </tspan>
+      <tspan x="-44.148" y="1.776" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">BFT consensus</tspan>
+      <tspan x="51.207" y="1.776" font-family=".SFNS-Regular" font-size="13" fill="#111111"> (HotStuff-style) or CRDTs.</tspan>
+      <tspan x="-214.786" y="23.376" font-family=".SFNS-Regular" font-size="13" fill="#111111">Implements </tspan>
+      <tspan x="-140.804" y="23.376" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">zk-SNARK proofs for metadata integrity</tspan>
+      <tspan x="105.689" y="23.376" font-family=".SFNS-Regular" font-size="13" fill="#111111">.</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 775.03, 789.397)">
+      <tspan x="-254.504" y="-32.668" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">Sharded object storage</tspan>
+      <tspan x="-109.073" y="-32.668" font-family=".SFNS-Regular" font-size="13" fill="#111111">: Each node stores encrypted chunks.</tspan>
+      <tspan x="-254.504" y="-11.068" font-family=".SFNS-Regular" font-size="13" fill="#111111">Break the data into </tspan>
+      <tspan x="-136.482" y="-11.068" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">N chunks</tspan>
+      <tspan x="-78.203" y="-11.068" font-family=".SFNS-Regular" font-size="13" fill="#111111"> + </tspan>
+      <tspan x="-62.931" y="-11.068" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">K parity chunks</tspan>
+      <tspan x="33.854" y="-11.068" font-family=".SFNS-Regular" font-size="13" fill="#111111"> (like RAID5/6) (Erasure Encoding)</tspan>
+      <tspan x="-254.504" y="10.532" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">Sealed Storage Proofs</tspan>
+      <tspan x="-115.586" y="10.532" font-family=".SFNS-Regular" font-size="13" fill="#111111">: Homomorphic encryption for access control.</tspan>
+      <tspan x="-254.504" y="32.132" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">ZK-Proofs for Read/Write Auditing</tspan>
+      <tspan x="-41.486" y="32.132" font-family=".SFNS-Regular" font-size="13" fill="#111111">: Verify that a node accessed data correctly.</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 769.466, 702.868)">
+      <tspan x="-94.127" y="-8.246" font-family="Gibson-Regular" font-size="14" fill="#000000">RocksDB as the storage engin</tspan>
+      <tspan x="-94.127" y="9.754" font-family="Gibson-Regular" font-size="14" fill="#000000">Content Addressable Store?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1144.149, 347.268)">
+      <tspan x="-222.757" y="-30.759" font-family=".SFNS-Regular" font-size="13" fill="#111111">USP: Every time you pull a model, you also pull:</tspan>
+      <tspan x="-222.757" y="-9.159" font-family=".SFNS-Regular" font-size="13" fill="#111111">	•	</tspan>
+      <tspan x="-166.757" y="-9.159" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">All the STARK proofs</tspan>
+      <tspan x="-37.732" y="-9.159" font-family=".SFNS-Regular" font-size="13" fill="#111111"> proving the model has not been tampered.</tspan>
+      <tspan x="-222.757" y="12.441" font-family=".SFNS-Regular" font-size="13" fill="#111111">	•	</tspan>
+      <tspan x="-166.757" y="12.441" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">All the chunk-level proofs</tspan>
+      <tspan x="-8.859" y="12.441" font-family=".SFNS-Regular" font-size="13" fill="#111111"> confirming the data’s history.</tspan>
+      <tspan x="-222.757" y="34.041" font-family=".SFNS-Regular" font-size="13" fill="#111111">	•	</tspan>
+      <tspan x="-166.757" y="34.041" font-family="HelveticaNeue-Bold" font-size="13" fill="#111111">All the replication proofs</tspan>
+      <tspan x="-15.151" y="34.041" font-family=".SFNS-Regular" font-size="13" fill="#111111"> showing no Byzantine behaviour.</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 882.034, 32.923)">
+      <tspan x="-26.936" y="3.5" font-family="Gibson-Regular" font-size="14" fill="#000000">powers....</tspan>
+    </text>
+  </g>
+</svg>

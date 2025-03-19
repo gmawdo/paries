@@ -54,17 +54,56 @@
             color: white;
             margin-top: 20px;
         }
+        .use-cases-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
         .use-case {
-            background-color: #f8f8f8;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
             transition: all 0.3s ease;
             transform: scale(1);
+            border: 1px solid #e0e0e0;
         }
+        
         .use-case:hover {
             transform: scale(1.02) translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .use-case-header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .use-case-content {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .use-case-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .use-case h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 900px) {
+            .use-cases-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -90,27 +129,97 @@
 <section>
     <h1>Building Proof Systems for Trust & Transparency</h1>
     <p>Our core framework named <em>Towards Zero</em> focuses on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> methodologies. We develop systems that can mathematically prove that a dataset was derived from a known source and that any transformations applied to it were performed according to defined rules. 
-       These proofs have applications across supply chains, compliance, and secure data workflows.</p>
+       These proofs have applications across supply chains, compliance, and secure data workflows, and with particular reference to the regulatory 
+       challenges posed by AI.</p>
+       <p>AI workloads demand secure, high-performance data infrastructure capable of handling massive models and ensuring verifiable computation integrity. <em>Towards Zero</em> provides the platform supporting provable AI data integrity, fault-tolerant storage, and secure routing—all backed by zero-knowledge cryptography and a formally verified OS foundation.</p>
 </section>
+
 <section>
     <h1>Customer Use Cases</h1>
-    <div class="use-case">
-    <h2><a href="https://edenconsignmenttracking.co.uk" style="text-decoration: none; color: inherit;">Eden Consignment Tracking</a> – A Proof of Shipment</h2>
-        <p class="subheading">Real-world application of our proof technology</p>
-        <p>Eden Consignment Tracking applies our principles of verifiable provenance to global logistics. 
-        The platform provides real-time visibility into shipments, linking each consignment to detailed carrier data and structured manifests.</p> 
-        <p><img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 20px; vertical-align: middle; margin-right: 10px;">
-        <strong>Cambridge University Press & Assessment</strong> is among our valued customers, relying on Eden to track their exam materials worldwide with precision.
-        </p>
+    <div class="use-cases-container">
+        <div class="use-case">
+            <div class="use-case-header">
+                <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 15px; vertical-align: middle; margin-right: 10px;">
+                <h2><a href="https://edenconsignmenttracking.co.uk" style="text-decoration: none; color: inherit;">Eden Consignment Tracking</a></h2>
+            </div>
+            <div class="use-case-content">
+                <p class="subheading">Real-world application of <em>Towards Zero</em></p>
+                <p>Eden Consignment Tracking applies our principles of verifiable provenance to global logistics. 
+                The platform provides real-time visibility into shipments, linking each consignment to detailed carrier data and structured manifests.</p> 
+                <p><strong>Cambridge University Press & Assessment</strong> is among our valued customers, relying on Eden to track their exam materials worldwide with precision.</p>
+            </div>
+        </div>
+
+        <div class="use-case">
+            <div class="use-case-header">
+                <img src="codasip.svg" alt="Codasip" style="height: 20px; vertical-align: middle; margin-right: 10px;">
+                <h2>A Provable filesystem Capability</h2>
+            </div>
+            <div class="use-case-content">
+                <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
+                <p>The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability
+                    pluggable directly into a Codasip IDE userspace running in the public cloud.</p>
+                <p><em>Jamie Broome, CPO at Codasip, stated: "<em>Towards Zero</em>'s highly secure PoC sandbox for our cloud based chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
+                    Particularly so, as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em></p>
+            </div>
+        </div>
+
+        <div class="use-case">
+            <div class="use-case-header">
+                <img src="sel4.svg" alt="Codasip" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+                <h2>Digital Concrete for AI Blueprint</h2>
+            </div>
+            <div class="use-case-content">
+                <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
+                <p>At its core, the <a href="blueprint.html" style="color: inherit; text-decoration: underline;">blueprint</a> integrates a FUSE-based filesystem with seL4 for formally verified execution, coupled with a sharded object store that ensures efficient parallel retrieval of large AI models.</p>
+                <p>ZKP-based authentication and SCION route proofs guarantee that only authorised entities access data and that every file follows a verifiable, expected network path.</p>
+                <p>Data is protected through STARK proofs, Byzantine fault tolerance, and Merkle-based metadata tracking, ensuring that AI models and their outputs remain immutable and traceable. Each model and inference is cryptographically fingerprinted, embedding integrity directly into the AI pipeline.</p>
+                <p>By combining secure storage, scalable retrieval, and transparent verification, <em>Towards Zero</em> redefines how AI data is stored, accessed, and proven in a trustless world.</p>
+            </div>
+        </div>
     </div>
-    <div class="use-case"><h2>Provable filesystem capability for Codasip's IDE</h2>
-        <p class="subheading">Virtual-world application of our proof technology</p>
-        <p><img src="codasip.svg" alt="Security.Performance.Proof" style="height: 20px; vertical-align: middle; margin-right: 10px;">
-        The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability pluggable directly into the Codasip IDE's userspace.
-        <em>Jamie Broome, CPO at Codasip, stated: "Their highly secure PoC sandbox for our chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
-            Particularly so as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em>
-        </p>
-    </div>
+</section>
+
+<section>
+    <h1>How Our Work Relates to Blockchain</h1>
+    <p>As noted cryptographer Bruce Schneier points out, blockchain is fundamentally a decentralised transaction system that leverages robust, industry-standard cryptography combined with various consensus approaches. This technological foundation makes blockchain an excellent solution for the public storage of data fingerprints and proofs.</p>
+    
+    <p>While we don't position ourselves as a "blockchain company," we recognise blockchain's value as a transparent, immutable public ledger. When combined with our <em>Towards Zero</em> framework, blockchain serves as an ideal platform for:</p>
+    
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin: 10px 0; padding-left: 20px;">• Publishing cryptographic proofs while preserving data privacy</li>
+        <li style="margin: 10px 0; padding-left: 20px;">• Creating transparent audit trails of computational processes</li>
+        <li style="margin: 10px 0; padding-left: 20px;">• Establishing decentralised trust in data transformations</li>
+    </ul>
+
+    <p>This approach allows us to leverage blockchain's strengths in transparency and immutability while maintaining data privacy and computational efficiency in our core systems.</p>
+
+
+    <h2 style="margin-top: 30px;"><img src="polkadot.svg" alt="Codasip" style="height: 30px; vertical-align: middle; margin-right: 10px;"> Decentralised Storage for Proofs</h2>
+    <p>Polkadot's Substrate framework represents a significant advancement in blockchain architecture, offering a modular approach that allows for purpose-built blockchain solutions. For <em>Towards Zero</em>, our interest is specific: we require a reliable, decentralised platform for storing cryptographic proofs and data fingerprints.</p>
+
+    <p>The introduction of Agile Coretime in Polkadot provides an efficient "consensus-as-a-service" platform that meets our focused needs:</p>
+
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin: 10px 0; padding-left: 20px;">• Secure, decentralised storage of proof attestations</li>
+        <li style="margin: 10px 0; padding-left: 20px;">• Immutable recording of data fingerprints</li>
+        <li style="margin: 10px 0; padding-left: 20px;">• Cost-effective consensus without infrastructure overhead</li>
+    </ul>
+
+    <p>This targeted use of Substrate's capabilities provides <em>Towards Zero</em> with the decentralised trust layer it needs, while keeping our core systems independent and focused on their primary functions.</p>
+</section>
+
+<section style="text-align: center;">
+    <h1>Get in Touch</h1>
+    <p style="font-size: 1.2em;">
+        <a href="mailto:contact@paries.co.uk" style="color: #333; text-decoration: none; margin: 0 15px;">
+            ✉️ contact@paries.co.uk
+        </a>
+        <span style="margin: 0 10px;">•</span>
+        <a href="https://t.me/paries" style="color: #333; text-decoration: none; margin: 0 15px;">
+            📱 Telegram @parieshouse
+        </a>
+    </p>
 </section>
 
 <footer>
