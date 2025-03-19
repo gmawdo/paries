@@ -82,17 +82,124 @@
             color: #222;
             margin: 5px 0;
         }
+        .hotspot {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #222;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .hotspot:hover {
+            background: #222;
+            color: white;
+            transform: scale(1.1);
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            z-index: 1001;
+            max-width: 80vw;
+            max-height: 80vh;
+            overflow: auto;
+        }
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #222;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-button">← Back</a>
     <div class="svg-container">
         <img src="blueprint.svg" alt="AI Blueprint Architecture" id="blueprint">
+        <div class="hotspot" style="left: 60%; top: 12%;" onclick="showPopup('popup0')">0</div>
+        <div class="hotspot" style="left: 26%; top: 28%;" onclick="showPopup('popup1')">1</div>
+        <div class="hotspot" style="left: 45%; top: 50%;" onclick="showPopup('popup2')">2</div>
+        <div class="hotspot" style="left: 75%; top: 40%;" onclick="showPopup('popup3')">3</div>
     </div>
     <div class="zoom-controls">
         <button class="zoom-button" onclick="zoomIn()">+</button>
         <div class="zoom-level" id="zoomLevel">100%</div>
         <button class="zoom-button" onclick="zoomOut()">−</button>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="hideAllPopups()"></div>
+
+    <div class="popup" id="popup0">
+        <button class="popup-close" onclick="hidePopup('popup0')">&times;</button>
+        <h3>USP</h3>
+        <p>Every time you pull a model, you also pull:</p>
+        <ul>
+            <li>All the STARK proofs thus proving the model has not been tampered with</li>
+            <li>All the chunk-level proofs confirming the data's history</li>
+            <li>All the replication proofs showing no Byzantine behaviour</li>
+        </ul>
+    </div>
+
+    <div class="popup" id="popup1">
+        <button class="popup-close" onclick="hidePopup('popup1')">&times;</button>
+        <h3>FUSE Filesystem as formally verified user-space services.</h3>
+        <p>FUSE split into three services reducing surface over which capability delegation needs to be applied:</p>
+        <ul>
+            <li>Metadata Service</li>
+            <li>Storage Engine Service</li>
+            <li>SCION Transfer Service</li>
+        </ul>
+        <p>Proofs generated for:</p>
+        <ul>
+            <li>Integrity of data chunks</li>
+            <li>Integrity of metadata</li>
+            <li>Integrity of network transfer</li>
+        </ul>
+        <p>Provides an object store abstraction for filesystem data. This works well as here as there is 
+            no shared state required in traditional POSIX environemnts. 
+        </p>
+    </div>
+
+    <div class="popup" id="popup2">
+        <button class="popup-close" onclick="hidePopup('popup2')">&times;</button>
+        <h3>Sharded Object Store</h3>
+        <img src="object-store-detail.svg" alt="Object Store Architecture" style="max-width: 100%;">
+        <p>Architecture of the sharded object store system...</p>
+    </div>
+
+    <div class="popup" id="popup3">
+        <button class="popup-close" onclick="hidePopup('popup3')">&times;</button>
+        <h3>ZKP Authentication</h3>
+        <img src="zkp-detail.svg" alt="ZKP Authentication Flow" style="max-width: 100%;">
+        <p>Zero-knowledge proof authentication process...</p>
     </div>
 
     <script>
@@ -106,6 +213,12 @@
         function updateZoom() {
             blueprint.style.transform = `scale(${currentZoom})`;
             zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+            
+            // Update hotspot positions based on zoom level
+            const hotspots = document.querySelectorAll('.hotspot');
+            hotspots.forEach(hotspot => {
+                hotspot.style.transform = `scale(${1/currentZoom})`;
+            });
         }
 
         function zoomIn() {
@@ -130,6 +243,22 @@
                 zoomOut();
             }
         });
+
+        function showPopup(popupId) {
+            document.getElementById(popupId).style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hidePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function hideAllPopups() {
+            const popups = document.querySelectorAll('.popup');
+            popups.forEach(popup => popup.style.display = 'none');
+            document.getElementById('overlay').style.display = 'none';
+        }
     </script>
 </body>
 </html>
