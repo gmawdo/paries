@@ -26,31 +26,110 @@
             max-width: 90vw;
             max-height: 90vh;
             overflow: auto;
+            position: relative;
         }
         .svg-container img {
             max-width: 100%;
             height: auto;
+            transform-origin: center;
+            transition: transform 0.3s ease;
         }
         .back-button {
             position: fixed;
-            top: 20px;
-            left: 20px;
+            top: 30px;
+            left: 30px;
             padding: 10px 20px;
             background: #222;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-family: Arial, sans-serif;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .back-button:hover {
             background: #444;
+        }
+        .zoom-controls {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .zoom-button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: #222;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+        .zoom-button:hover {
+            background: #444;
+        }
+        .zoom-level {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #222;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-button">← Back</a>
     <div class="svg-container">
-        <img src="blueprint.svg" alt="AI Blueprint Architecture">
+        <img src="blueprint.svg" alt="AI Blueprint Architecture" id="blueprint">
     </div>
+    <div class="zoom-controls">
+        <button class="zoom-button" onclick="zoomIn()">+</button>
+        <div class="zoom-level" id="zoomLevel">100%</div>
+        <button class="zoom-button" onclick="zoomOut()">−</button>
+    </div>
+
+    <script>
+        let currentZoom = 1;
+        const ZOOM_STEP = 0.1;
+        const MAX_ZOOM = 3;
+        const MIN_ZOOM = 0.5;
+        const blueprint = document.getElementById('blueprint');
+        const zoomLevelDisplay = document.getElementById('zoomLevel');
+
+        function updateZoom() {
+            blueprint.style.transform = `scale(${currentZoom})`;
+            zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+        }
+
+        function zoomIn() {
+            if (currentZoom < MAX_ZOOM) {
+                currentZoom += ZOOM_STEP;
+                updateZoom();
+            }
+        }
+
+        function zoomOut() {
+            if (currentZoom > MIN_ZOOM) {
+                currentZoom -= ZOOM_STEP;
+                updateZoom();
+            }
+        }
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '+' || e.key === '=') {
+                zoomIn();
+            } else if (e.key === '-' || e.key === '_') {
+                zoomOut();
+            }
+        });
+    </script>
 </body>
 </html>
