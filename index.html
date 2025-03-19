@@ -32,8 +32,7 @@
             color: #222;
         }
         h2 {
-            color: #222;
-            margin-top: 40px; 
+            color: #222; 
             margin-bottom: 1px; 
         }
         h2 a:hover {
@@ -55,48 +54,63 @@
             color: white;
             margin-top: 20px;
         }
+        .use-case {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+        .use-case:hover {
+            transform: scale(1.02) translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
 
 <header>
-    Paries – The Power of sealed Provenance & Proof
+    Paries – The Power of Provenance & Proof
 </header>
 
 <section>
-    <h1>Who We Are</h1>
-    <p>Paries develops cryptographic proof systems that ensure integrity, traceability, and transparency in both physical and digital workflows. 
+    <h1>Paries</h1>
+    <p>At Paries we develop cryptographic proof systems that ensure integrity, traceability, and transparency in both physical and digital workflows. 
        We create technologies that attest to the origin of data, validate transformations, and provide verifiable proofs without exposing sensitive information.</p>
 </section>
 
 <section>
-    <h1>Our Technology</h1>
+    <h1>The Paries Vision</h1>
+    <p>In an interconnected world where both goods and data move across borders, trust should not be assumed—it should be <strong>proven</strong>. 
+       At Paries, we are building the infrastructure to ensure that whether you're verifying a digital transformation in a virtual world or tracking a global shipment, 
+       the proof is always in the system.</p>
+</section>
 
-    <h2>Building Proof Systems for Trust & Transparency</h2>
-    <p>Our core research focuses on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> methodologies. We develop systems that can mathematically prove that a dataset was derived from a known source and that any transformations applied to it were performed according to defined rules. 
+<section>
+    <h1>Building Proof Systems for Trust & Transparency</h1>
+    <p>Our core framework named <em>Towards Zero</em> focuses on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> methodologies. We develop systems that can mathematically prove that a dataset was derived from a known source and that any transformations applied to it were performed according to defined rules. 
        These proofs have applications across supply chains, compliance, and secure data workflows.</p>
 </section>
 <section>
-    <h1>Use Cases</h1>
+    <h1>Customer Use Cases</h1>
+    <div class="use-case">
     <h2><a href="https://edenconsignmenttracking.co.uk" style="text-decoration: none; color: inherit;">Eden Consignment Tracking</a> – A Proof of Shipment</h2>
-        <p class="subheading">Real-world application of our proof technology.</p>
+        <p class="subheading">Real-world application of our proof technology</p>
         <p>Eden Consignment Tracking applies our principles of verifiable provenance to global logistics. 
         The platform provides real-time visibility into shipments, linking each consignment to detailed carrier data and structured manifests.</p> 
         <p><img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 20px; vertical-align: middle; margin-right: 10px;">
         <strong>Cambridge University Press & Assessment</strong> is among our valued customers, relying on Eden to track their exam materials worldwide with precision.
         </p>
-        <h2>Provable filesystem capability for sel4</h2>
-        <p class="subheading">Virtual-world application of our proof technology.</p>
-        <p><img src="sel4.svg" alt="Security.Performance.Proof" style="height: 40px; vertical-align: middle; margin-right: 10px;">
-            Supporting the sel4 microkernel initiative with a  provable filesystem backed with an object store.
+    </div>
+    <div class="use-case"><h2>Provable filesystem capability for Codasip's IDE</h2>
+        <p class="subheading">Virtual-world application of our proof technology</p>
+        <p><img src="codasip.svg" alt="Security.Performance.Proof" style="height: 20px; vertical-align: middle; margin-right: 10px;">
+        The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability pluggable directly into the Codasip IDE's userspace.
+        <em>Jamie Broome, CPO at Codasip, stated: "Their highly secure PoC sandbox for our chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
+            Particularly so as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em>
         </p>
-</section>
-
-<section>
-    <h1>Our Vision</h1>
-    <p>In an interconnected world where both goods and data move across borders, trust should not be assumed—it should be <strong>proven</strong>. 
-       At Paries, we are building the infrastructure to ensure that whether you're verifying a digital transformation in a virtual world or tracking a global shipment, 
-       the proof is always in the system.</p>
+    </div>
 </section>
 
 <footer>
