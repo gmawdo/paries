@@ -105,6 +105,12 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .header-with-image {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +133,10 @@
 </section>
 
 <section>
-    <h1>Building Proof Systems for Trust & Transparency</h1>
+    <div class="header-with-image">
+        <img src="fact-fake.jpg" alt="Fake or Fact?" style="height: 60px;">
+        <h1>Building Proof Systems for Trust & Transparency</h1>
+    </div>
     <p>Our core framework named <em>Towards Zero</em> focuses on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> methodologies. We develop systems that can mathematically prove that a dataset was derived from a known source and that any transformations applied to it were performed according to defined rules. 
        These proofs have applications across supply chains, compliance, and secure data workflows, and with particular reference to the regulatory 
        challenges posed by AI.</p>
@@ -139,8 +148,8 @@
     <div class="use-cases-container">
         <div class="use-case">
             <div class="use-case-header">
-                <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 15px; vertical-align: middle; margin-right: 10px;">
-                <h2><a href="https://edenconsignmenttracking.co.uk" style="text-decoration: none; color: inherit;">Eden Consignment Tracking</a></h2>
+                <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 18px; vertical-align: middle; margin-right: 10px;">
+                <h2><a href="https://edenconsignmenttracking.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Eden Consignment Tracking</a></h2>
             </div>
             <div class="use-case-content">
                 <p class="subheading">Real-world application of <em>Towards Zero</em></p>
@@ -152,13 +161,13 @@
 
         <div class="use-case">
             <div class="use-case-header">
-                <img src="codasip.svg" alt="Codasip" style="height: 20px; vertical-align: middle; margin-right: 10px;">
-                <h2>A Provable filesystem Capability</h2>
+                <img src="codasip.svg" alt="Codasip" style="height: 23px; vertical-align: middle; margin-right: 10px;">
+                <h2>Capability-Based Filesystem</h2>
             </div>
             <div class="use-case-content">
                 <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
-                <p>The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability
-                    pluggable directly into a Codasip IDE userspace running in the public cloud.</p>
+                <p>The platform tracks the creation of silicon chip designs by including a provable capability-based filesystem
+                    in userspace plugged directly into a Codasip IDE running in the public cloud.</p>
                 <p><em>Jamie Broome, CPO at Codasip, stated: "<em>Towards Zero</em>'s highly secure PoC sandbox for our cloud based chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
                     Particularly so, as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em></p>
             </div>
@@ -166,14 +175,14 @@
 
         <div class="use-case">
             <div class="use-case-header">
-                <img src="sel4.svg" alt="Codasip" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+                <img src="sel4.svg" alt="Codasip" style="height: 33px; vertical-align: middle; margin-right: 10px;">
                 <h2>Digital Concrete for AI Blueprint</h2>
             </div>
             <div class="use-case-content">
                 <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
-                <p>At its core, the <a href="blueprint.html" style="color: inherit; text-decoration: underline;">blueprint</a> integrates a FUSE-based filesystem with seL4 for formally verified execution, coupled with a sharded object store that ensures efficient parallel retrieval of large AI models.</p>
+                <p>At its core, the <a href="blueprint.html" style="color: inherit; text-decoration: underline;">blueprint</a> is <em>capabilities-based</em> and integrates a FUSE-based filesystem with seL4 for formally verified execution, coupled with a sharded IPFS-like object store that ensures efficient parallel retrieval of large AI models.</p>
                 <p>ZKP-based authentication and SCION route proofs guarantee that only authorised entities access data and that every file follows a verifiable, expected network path.</p>
-                <p>Data is protected through STARK proofs, Byzantine fault tolerance, and Merkle-based metadata tracking, ensuring that AI models and their outputs remain immutable and traceable. Each model and inference is cryptographically fingerprinted, embedding integrity directly into the AI pipeline.</p>
+                <p>Data is protected through STARK proofs, Byzantine fault tolerance, and Merkle-DAG based metadata tracking, ensuring that AI models and their outputs remain immutable and traceable. Each model and inference is cryptographically fingerprinted, embedding integrity directly into the AI pipeline.</p>
                 <p>By combining secure storage, scalable retrieval, and transparent verification, <em>Towards Zero</em> redefines how AI data is stored, accessed, and proven in a trustless world.</p>
             </div>
         </div>
@@ -181,8 +190,11 @@
 </section>
 
 <section>
-    <h1>How Our Work Relates to Blockchain</h1>
-    <p>As noted cryptographer Bruce Schneier points out, blockchain is fundamentally a decentralised transaction system that leverages robust, industry-standard cryptography combined with
+    <div class="header-with-image">
+        <img src="blockchain-9998.svg" alt="An image of a blockchain" style="height: 60px;">
+        <h1>How can Blockchain help?</h1>
+    </div>
+    <p>As noted cryptographer <a href="https://en.wikipedia.org/wiki/Bruce_Schneier" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Bruce Schneier</a> points out, blockchain is fundamentally a decentralised transaction system that leverages robust, industry-standard cryptography combined with
         various consensus approaches. This technological foundation makes blockchain an excellent solution for the privacy preserving public storage of data fingerprints and proofs.</p>
     
     <p>While we don't position ourselves as a "blockchain company", we recognise blockchain's value as a transparent, immutable public ledger. When combined with our <em>Towards Zero</em> framework, blockchain serves as an ideal platform for:</p>
@@ -196,9 +208,9 @@
     <p>This approach allows us to leverage blockchain's strengths in transparency and immutability while maintaining data privacy and computational efficiency in our core systems.</p>
 
 
-    <h2 style="margin-top: 30px;"><img src="polkadot.svg" alt="Codasip" style="height: 30px; vertical-align: middle; margin-right: 10px;"> Decentralised Storage for Proofs</h2>
+    <h2 style="margin-top: 30px;"><img src="polkadot.svg" alt="Codasip" style="height: 30px; vertical-align: middle; margin-right: 10px;"> As a Decentralised Store for Proofs</h2>
     <p>Polkadot's Substrate framework represents a significant advancement in blockchain architecture, offering a modular approach that allows for purpose-built blockchain solutions that are easily built and deployed.
-         For <em>Towards Zero</em>, our interest is specific: we require a reliable, decentralised platform for storing cryptographic proofs and data fingerprints.</p>
+         For <em>Towards Zero</em>, our interest was specific: we required a reliable, decentralised platform for storing cryptographic proofs and data fingerprints.</p>
 
     <p>The introduction of Agile Coretime in Polkadot provides an efficient "consensus-as-a-service" platform that meets our focused needs:</p>
 
