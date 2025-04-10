@@ -114,6 +114,40 @@
             align-items: center;
             gap: 10px;
         }
+
+        .collapsible-trigger {
+            cursor: pointer;
+            position: relative;
+            padding-left: 25px;
+            user-select: none;
+        }
+
+        .collapsible-trigger::before {
+            content: '+';
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            font-size: 1.2em;
+            width: 15px;
+            text-align: center;
+        }
+
+        .collapsible-trigger.active::before {
+            content: '−';
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsible-content.active {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
     </style>
 </head>
 <body>
@@ -154,171 +188,185 @@
 </section>
 
 <section>
-    <div class="header-with-image">
+    <div class="header-with-image collapsible-trigger">
         <img src="fact-fake.jpg" alt="Fake or Fact?" style="height: 60px;">
-        <h1>Building Proof Systems for Trust & Transparency</h1>
+        <h1>How Paries builds Proof Systems for Trust & Transparency</h1>
     </div>
-    <p>Our framework named <em>Towards Zero</em> has at its core a strong focus on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> resulting in
-        verifiable data provenance — a big step beyond typical uses of ZKPs.</p>
+    <div class="collapsible-content"> 
+        <p>We use our lightweight and standards based framework named <em>Towards Zero</em> -- it has at its core a strong focus on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> resulting in
+            verifiable data provenance — a big step beyond typical uses of ZKPs.</p>
 
-    <p>We develop systems that can mathematically prove that a dataset was derived from known sources and that any transformations applied to it were performed
-        according to defined rules. Proofs unlock a new era of verifiable outcomes across industries — whether it's compliance, supply chain transparency, enterprise
-        audit, or automated public-sector oversight — making trust not just claimable, but provable.
-    </p>
+        <p>We develop systems that can mathematically prove that a dataset was derived from known sources and that any transformations applied to it were performed
+            according to defined rules. Proofs unlock a new era of verifiable outcomes across industries — whether it's compliance, supply chain transparency, enterprise
+            audit, or automated public-sector oversight — making trust not just claimable, but provable.
+        </p>
 
-    <p>AI workloads are a strong example of the application of Towards Zero, as they increasingly demand a secure, high-performance data infrastructure
-        capable of handling massive models while ensuring verifiable computation integrity at every step. Towards Zero provides the platform supporting
-        provable AI data integrity, fault-tolerant storage, and secure routing — all backed by zero-knowledge cryptography and a formally verified OS foundation.
-    </p>
-</section>
-
-<section>
-    <h1>Customer Use Cases</h1>
-    <div class="use-cases-container">
-        <div class="use-case">
-            <div class="use-case-header">
-                <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 18px; vertical-align: middle; margin-right: 10px;">
-                <h2><a href="https://edenconsignmenttracking.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Eden Consignment Tracking</a></h2>
-            </div>
-            <div class="use-case-content">
-                <p class="subheading">Real-world application of <em>Towards Zero</em></p>
-                <p>Eden Consignment Tracking applies our principles of verifiable provenance to global logistics. 
-                The platform provides real-time visibility into shipments, linking each consignment to detailed carrier data and structured manifests.</p> 
-                <p><strong><a href="https://www.cambridge.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Cambridge University Press & Assessment</a></strong> is among our valued customers, relying on Eden to track their exam materials worldwide with precision.</p>
-            </div>
-        </div>
-
-        <div class="use-case">
-            <div class="use-case-header">
-                <img src="codasip.svg" alt="Codasip" style="height: 23px; vertical-align: middle; margin-right: 10px;">
-                <h2>Capability-Based Filesystem</h2>
-            </div>
-            <div class="use-case-content">
-                <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
-                <p>The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability
-                    pluggable directly into a <a href="https://codasip.com/university-program/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Codasip</a> IDE userspace running in the public cloud and supporting their university programme.</p>
-                <p><em>Jamie Broome, CPO at <a href="https://codasip.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Codasip</a>, stated: "The <em>Towards Zero</em>'s inspired secure PoC sandbox for our cloud based chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
-                    Particularly so, as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em></p>
-            </div>
-        </div>
-
-        <div class="use-case">
-            <div class="use-case-header">
-                <img src="donttrust.png" alt="Don't Trust, Verify" style="height: 38px; vertical-align: middle; margin-right: 10px;">
-                <h2><a href="https://verifiedvault.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">VerifiedVault Virtual Data Room</a></h2>
-            </div>
-            <div class="use-case-content">
-                <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
-                <p>Verified Vault is a next-generation Virtual Data Room (VDR) designed for highly secure document sharing, permissioning, and auditable file usage tracking.
-                </p><p>Built on a cryptographically verifiable foundation, it ensures that every document interaction—viewing, sharing, modification, or download—is
-                    provable and tamper-resistant. This makes VerifiedVault ideal for industries requiring strict compliance, auditability, and data integrity,
-                    such as finance, legal, and healthcare.</p>
-                    <p>Unlike conventional VDRs that rely on access logs and discretionary trust, VerifiedVault uses a discentralised trustless store for audit.
-                        Where miltary grade security is required VerifiedVault integrates zero-knowledge proofs (ZKPs) and secure overlay networks to provide
-                        even deeper provable trust.</p>
-                    <p>It ensures that permissions are enforced at a cryptographic level, eliminating unauthorised access risks while maintaining a transparent yet
-                        privacy-preserving record of activity. Users can define granular access controls, track document lineage, and verify compliance without
-                        exposing sensitive data.</p>
-             </div>
-        </div>
-
-        <div class="use-case">
-            <div class="use-case-header">
-                <img src="sel4.svg" alt="Codasip" style="height: 33px; vertical-align: middle; margin-right: 10px;">
-                <h2>Digital Concrete for AI Blueprint</h2>
-            </div>
-            <div class="use-case-content">
-                <p class="subheading">A commissioned blueprint based on <em>Towards Zero</em></p>
-                <p>At its core, the <a href="blueprint.html" style="color: inherit; text-decoration: underline;">blueprint</a> is <em>capabilities-based</em> and integrates a FUSE-based filesystem with seL4 for formally verified execution, coupled with a sharded IPFS-like object store that ensures efficient parallel retrieval of large AI models.</p>
-                <p>ZKP-based authentication and SCION route proofs guarantee that only authorised entities access data and that every file follows a verifiable, expected network path.</p>
-                <p>Data is protected through STARK proofs, Byzantine fault tolerance, and Merkle-DAG based metadata tracking, ensuring that AI models and their outputs remain immutable and traceable. Each model and inference is cryptographically fingerprinted, embedding integrity directly into the AI pipeline.</p>
-                <p>By combining secure storage, scalable retrieval, and transparent verification, <em>Towards Zero</em> redefines how AI data is stored, accessed, and proven in a trustless world.</p>
-            </div>
-        </div>
+        <p>AI workloads are a strong example of the application of Towards Zero, as they increasingly demand a secure, high-performance data infrastructure
+            capable of handling massive models while ensuring verifiable computation integrity at every step. Towards Zero provides the platform supporting
+            provable AI data integrity, fault-tolerant storage, and secure routing — all backed by zero-knowledge cryptography and a formally verified OS foundation.
+        </p>
     </div>
 </section>
 
 <section>
-    <h1>Foundational Technologies in the ZKP Industry</h1>
-    <p>In the field of Zero-Knowledge Proof (ZKP) technologies, Paries utilises several foundational systems and libraries that are leading the way for advanced applications. Notable examples include RISC Zero,
-        zkOS, Arkworks, and Winterfell, each offering distinct capabilities that align with Paries' technical architectural goals. While many of these technologies are primarily focused on blockchain,
-        Paries aims to harness ZKP for broader and more immediate industry applications.</p>
+    <h1 class="collapsible-trigger">Customer Use Cases</h1>
+    <div class="collapsible-content">  
+        <div class="use-cases-container">
+            <div class="use-case">
+                <div class="use-case-header">
+                    <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 18px; vertical-align: middle; margin-right: 10px;">
+                    <h2><a href="https://edenconsignmenttracking.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Eden Consignment Tracking</a></h2>
+                </div>
+                <div class="use-case-content">
+                    <p class="subheading">Real-world application of <em>Towards Zero</em></p>
+                    <p>Eden Consignment Tracking applies our principles of verifiable provenance to global logistics. 
+                    The platform provides real-time visibility into shipments, linking each consignment to detailed carrier data and structured manifests.</p> 
+                    <p><strong><a href="https://www.cambridge.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Cambridge University Press & Assessment</a></strong> is among our valued customers, relying on Eden to track their exam materials worldwide with precision.</p>
+                </div>
+            </div>
 
-    <h2>🧱 <a href="https://arkworks.rs/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Arkworks</a></h2>
-    <ul>
-        <li><strong>Focus:</strong> Provides core cryptographic primitives (fields, curves, etc.) and constructions for various proof systems
-            (e.g., Groth16, Marlin).</li>
-        <li><strong>Relevance:</strong> Offers fundamental, high-performance building blocks that underpin <em>Towards Zero</em>, valuable for constructing
-            robust proof-generation components. (Originated from academic research, e.g., <strong>UC Berkeley</strong>, now community-driven).</li>
-    </ul>
+            <div class="use-case">
+                <div class="use-case-header">
+                    <img src="codasip.svg" alt="Codasip" style="height: 23px; vertical-align: middle; margin-right: 10px;">
+                    <h2>Capability-Based Filesystem</h2>
+                </div>
+                <div class="use-case-content">
+                    <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
+                    <p>The platform tracks the creation of silicon chip designs by including a FUSE based provable filesystem capability
+                        pluggable directly into a <a href="https://codasip.com/university-program/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Codasip</a> IDE userspace running in the public cloud and supporting their university programme.</p>
+                    <p><em>Jamie Broome, CPO at <a href="https://codasip.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Codasip</a>, stated: "The <em>Towards Zero</em>'s inspired secure PoC sandbox for our cloud based chip design environment, combined with its full provenance tracking and proof system, will be a game-changer. 
+                        Particularly so, as legislation is introduced to mandate full provenance of design for critical infrastructure components, the system will prove to be incredibly valuable across a number of industries."</em></p>
+                </div>
+            </div>
 
-    <h2>❄️ <a href="https://github.com/facebook/winterfell" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Winterfell</a> (STARK Implementation by <a href="https://meta.com">Meta</a>)</h2>
+            <div class="use-case">
+                <div class="use-case-header">
+                    <img src="donttrust.png" alt="Don't Trust, Verify" style="height: 38px; vertical-align: middle; margin-right: 10px;">
+                    <h2><a href="https://verifiedvault.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">VerifiedVault Virtual Data Room</a></h2>
+                </div>
+                <div class="use-case-content">
+                    <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
+                    <p>Verified Vault is a next-generation Virtual Data Room (VDR) designed for highly secure document sharing, permissioning, and auditable file usage tracking.
+                    </p><p>Built on a cryptographically verifiable foundation, it ensures that every document interaction—viewing, sharing, modification, or download—is
+                        provable and tamper-resistant. This makes VerifiedVault ideal for industries requiring strict compliance, auditability, and data integrity,
+                        such as finance, legal, and healthcare.</p>
+                        <p>Unlike conventional VDRs that rely on access logs and discretionary trust, VerifiedVault uses a discentralised trustless store for audit.
+                            Where miltary grade security is required VerifiedVault integrates zero-knowledge proofs (ZKPs) and secure overlay networks to provide
+                            even deeper provable trust.</p>
+                        <p>It ensures that permissions are enforced at a cryptographic level, eliminating unauthorised access risks while maintaining a transparent yet
+                            privacy-preserving record of activity. Users can define granular access controls, track document lineage, and verify compliance without
+                            exposing sensitive data.</p>
+                </div>
+            </div>
 
-    <ul>
-        <li><strong>Focus:</strong> High-performance STARK (Scalable Transparent ARgument of Knowledge) prover/verifier library.</li>
-        <li><strong>Relevance:</strong> Provides a powerful implementation for STARKs, a key technology for transparent and scalable ZKPs relevant to
-            verifying complex processes like AI computations. (Primarily developed by engineers at <strong>Meta</strong>, now open-source).</li>
-    </ul>
-
-    <h2>⚡ <a href="https://starkware.co/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">StarkWare</a></h2>
-    <ul>
-        <li><strong>Focus:</strong> Building practical STARK-based scaling solutions for blockchains and pioneering STARK implementations (StarkEx, Starknet) and develop the <a href="https://www.cairo-lang.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Cairo</a> language for provable computation.</li>
-        <li><strong>Relevance:</strong> StarkWare's thought leadership in practical ZKP applications and their development of tools like Cairo are valuable resources for the industry. Their work demonstrates how STARKs can be effectively deployed for large-scale, verifiable computation, aligning with the goals of ensuring data integrity within frameworks like Towards Zero.</li>
-    </ul>
-
-    <h2>🏗️ <a href="https://www.risczero.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">RISC Zero</a></h2>
-
-    <ul>
-        <li><strong>Focus:</strong> General-purpose ZKVM (Zero-Knowledge Virtual Machine).</li>
-        <li><strong>Relevance:</strong> Serves as a foundational layer for frameworks like Towards Zero.</li>
-    </ul>
-
-    <!--h2>zkOS (<a href="https://minaprotocol.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Mina Foundation</a> / <a href="https://o1labs.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">O(1) Labs</a>)</h2>
-
-    <ul>
-        <li><strong>Focus:</strong> General-purpose ZK operating system abstraction.</li>
-        <li><strong>Relevance to Paries:</strong> Aligns with our vision to tie data origin and processing together in one auditable unit.</li>
-    </ul-->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <img src="sel4.svg" alt="Codasip" style="height: 33px; vertical-align: middle; margin-right: 10px;">
+                    <h2>Digital Concrete for AI Blueprint</h2>
+                </div>
+                <div class="use-case-content">
+                    <p class="subheading">A commissioned blueprint based on <em>Towards Zero</em></p>
+                    <p>At its core, the <a href="blueprint.html" style="color: inherit; text-decoration: underline;">blueprint</a> is <em>capabilities-based</em> and integrates a FUSE-based filesystem with seL4 for formally verified execution, coupled with a sharded IPFS-like object store that ensures efficient parallel retrieval of large AI models.</p>
+                    <p>ZKP-based authentication and SCION route proofs guarantee that only authorised entities access data and that every file follows a verifiable, expected network path.</p>
+                    <p>Data is protected through STARK proofs, Byzantine fault tolerance, and Merkle-DAG based metadata tracking, ensuring that AI models and their outputs remain immutable and traceable. Each model and inference is cryptographically fingerprinted, embedding integrity directly into the AI pipeline.</p>
+                    <p>By combining secure storage, scalable retrieval, and transparent verification, <em>Towards Zero</em> redefines how AI data is stored, accessed, and proven in a trustless world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section>
-    <div class="header-with-image">
+    <h1 class="collapsible-trigger">Relevant Foundational Technologies in the ZKP Industry</h1>
+    <div class="collapsible-content">  
+        <p>In the field of Zero-Knowledge Proof (ZKP) technologies, Paries utilises several foundational systems and libraries that are leading the way for advanced applications. Notable examples include RISC Zero,
+            zkOS, Arkworks, and Winterfell, each offering distinct capabilities that align with Paries' technical architectural goals. While many of these technologies are primarily focused on blockchain,
+            Paries aims to harness ZKP for broader and more immediate industry applications.</p>
+
+        <h2>🧱 <a href="https://arkworks.rs/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Arkworks</a></h2>
+        <ul>
+            <li><strong>Focus:</strong> Provides core cryptographic primitives (fields, curves, etc.) and constructions for various proof systems
+                (e.g., Groth16, Marlin).</li>
+            <li><strong>Relevance:</strong> Offers fundamental, high-performance building blocks that underpin <em>Towards Zero</em>, valuable for constructing
+                robust proof-generation components. (Originated from academic research, e.g., <strong>UC Berkeley</strong>, now community-driven).</li>
+        </ul>
+
+        <h2>❄️ <a href="https://github.com/facebook/winterfell" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Winterfell</a> (STARK Implementation by <a href="https://meta.com">Meta</a>)</h2>
+
+        <ul>
+            <li><strong>Focus:</strong> High-performance STARK (Scalable Transparent ARgument of Knowledge) prover/verifier library.</li>
+            <li><strong>Relevance:</strong> Provides a powerful implementation for STARKs, a key technology for transparent and scalable ZKPs relevant to
+                verifying complex processes like AI computations. (Primarily developed by engineers at <strong>Meta</strong>, now open-source).</li>
+        </ul>
+
+        <h2>⚡ <a href="https://starkware.co/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">StarkWare</a></h2>
+        <ul>
+            <li><strong>Focus:</strong> Building practical STARK-based scaling solutions for blockchains and pioneering STARK implementations (StarkEx, Starknet) and develop the <a href="https://www.cairo-lang.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Cairo</a> language for provable computation.</li>
+            <li><strong>Relevance:</strong> StarkWare's thought leadership in practical ZKP applications and their development of tools like Cairo are valuable resources for the industry. Their work demonstrates how STARKs can be effectively deployed for large-scale, verifiable computation, aligning with the goals of ensuring data integrity within frameworks like Towards Zero.</li>
+        </ul>
+
+        <h2>🏗️ <a href="https://www.risczero.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">RISC Zero</a></h2>
+
+        <ul>
+            <li><strong>Focus:</strong> General-purpose ZKVM (Zero-Knowledge Virtual Machine).</li>
+            <li><strong>Relevance:</strong> Serves as a foundational layer for frameworks like Towards Zero.</li>
+        </ul>
+
+        <!--h2>zkOS (<a href="https://minaprotocol.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Mina Foundation</a> / <a href="https://o1labs.org/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">O(1) Labs</a>)</h2>
+
+        <ul>
+            <li><strong>Focus:</strong> General-purpose ZK operating system abstraction.</li>
+            <li><strong>Relevance to Paries:</strong> Aligns with our vision to tie data origin and processing together in one auditable unit.</li>
+        </ul-->
+    </div>
+</section>
+
+<section>
+    <div class="header-with-image collapsible-trigger">
         <img src="blockchain-9998.svg" alt="An image of a blockchain" style="height: 60px;">
         <h1>Where is the role of Blockchain in all this?</h1>
     </div>
-    <p>As noted cryptographer <a href="https://en.wikipedia.org/wiki/Bruce_Schneier" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Bruce Schneier</a> points
-        out, <a href="https://www.schneier.com/essays/archives/2019/02/theres_no_good_reaso.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">there's no good reason to trust blockchain.</a>
-        However Paries belives blockchain should fundamentally be viewed as a decentralised public record that leverages robust, industry-standard cryptographic techniques combined with
-        various consensus approaches to facilitate verification by many. Its technological foundation makes blockchain an excellent solution for the privacy preserving public storage of data fingerprints and proofs.
-        In short a means of publication and verification as a service.</p>
-        <p>Furthermore, we should view this as a step toward a more trustworthy and automated model for audit and transparency. Just consider the state of corporate accounting today—where the outdated practice of double-entry 
-            bookkeeping, policed by costly audit firms and shaped by management’s subjective narratives, has repeatedly failed to prevent major scandals. From Enron and WorldCom to Wirecard and Carillion, these high-profile 
-            failures highlight how easily traditional "trusted" systems can be manipulated, often at immense cost to shareholders and the public.</p>
-    
-    <p>Paries does not position itself as a <em>blockchain company</em>, but it does recognise blockchain's value as a transparent, immutable <strong>public ledger</strong>. When combined with our <em>Towards Zero</em> framework,
-        blockchain serves as an ideal platform for:</p>
-    
-    <ul style="list-style-type: none; padding: 0;">
-        <li style="margin: 10px 0; padding-left: 20px;">• Publishing cryptographic proofs while preserving data privacy</li>
-        <li style="margin: 10px 0; padding-left: 20px;">• Creating transparent audit trails of computational processes</li>
-        <li style="margin: 10px 0; padding-left: 20px;">• Establishing decentralised trust in data transformations</li>
-    </ul>
+    <div class="collapsible-content"> 
+        <p>As noted cryptographer <a href="https://en.wikipedia.org/wiki/Bruce_Schneier" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Bruce Schneier</a> points
+            out, <a href="https://www.schneier.com/essays/archives/2019/02/theres_no_good_reaso.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">there's no good reason to trust blockchain.</a>
+            However Paries belives blockchain should fundamentally be viewed as a decentralised public record that leverages robust, industry-standard cryptographic techniques combined with
+            various consensus approaches to facilitate verification by many. Its technological foundation makes blockchain an excellent solution for the privacy preserving public storage of data fingerprints and proofs.
+            In short a means of publication and verification as a service.</p>
+            <p>Furthermore, we should view this as a step toward a more trustworthy and automated model for audit and transparency. Just consider the state of corporate accounting today—where the outdated practice of double-entry 
+                bookkeeping, policed by costly audit firms and shaped by management's subjective narratives, has repeatedly failed to prevent major scandals. From Enron and WorldCom to Wirecard and Carillion, these high-profile 
+                failures highlight how easily traditional "trusted" systems can be manipulated, often at immense cost to shareholders and the public.</p>
+        
+        <p>Paries does not position itself as a <em>blockchain company</em>, but it does recognise blockchain's value as a transparent, immutable <strong>public ledger</strong>. When combined with our <em>Towards Zero</em> framework,
+            blockchain serves as an ideal platform for:</p>
+        
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin: 10px 0; padding-left: 20px;">• Publishing cryptographic proofs while preserving data privacy</li>
+            <li style="margin: 10px 0; padding-left: 20px;">• Creating transparent audit trails of computational processes</li>
+            <li style="margin: 10px 0; padding-left: 20px;">• Establishing decentralised trust in data transformations</li>
+        </ul>
 
-    <p>This approach allows us to leverage blockchain's strengths in transparency and immutability while maintaining data privacy and computational efficiency in our core systems.</p>
+        <p>This approach allows us to leverage blockchain's strengths in transparency and immutability while maintaining data privacy and computational efficiency in our core systems.</p>
+    </div>
+</section>
 
+<section>
+    <div class="header-with-image collapsible-trigger">
+        <img src="polkadot.svg" alt="Polkadot" style="height: 30px;">
+        <h1>Immutable public ledger of Proofs</h1>
+    </div>
+    <div class="collapsible-content">  
+        <p><a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Polkadot's</a> <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate</a> framework represents a significant advancement in blockchain architecture, offering a modular approach that allows for purpose-built blockchain solutions. For <em>Towards Zero</em>, our interest is specific: we require a reliable, decentralised platform for storing cryptographic proofs and data fingerprints.</p>
 
-    <h2 style="margin-top: 30px;"><img src="polkadot.svg" alt="Polkadot" style="height: 30px; vertical-align: middle; margin-right: 10px;"> Decentralised Storage for Proofs</h2>
-    <p><a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Polkadot's</a> <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate</a> framework represents a significant advancement in blockchain architecture, offering a modular approach that allows for purpose-built blockchain solutions. For <em>Towards Zero</em>, our interest is specific: we require a reliable, decentralised platform for storing cryptographic proofs and data fingerprints.</p>
+        <p>The introduction of Agile Coretime in <a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Polkadot</a> provides an efficient access to <em>Consensus as a Service</em> that meets our focused needs:</p>
 
-    <p>The introduction of Agile Coretime in <a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Polkadot</a> provides an efficient access to <em>Consensus as a Service</em> that meets our focused needs:</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin: 10px 0; padding-left: 20px;">• Secure, decentralised storage of proof attestations</li>
+            <li style="margin: 10px 0; padding-left: 20px;">• Immutable recording of data fingerprints</li>
+            <li style="margin: 10px 0; padding-left: 20px;">• Cost-effective consensus without infrastructure overhead</li>
+        </ul>
 
-    <ul style="list-style-type: none; padding: 0;">
-        <li style="margin: 10px 0; padding-left: 20px;">• Secure, decentralised storage of proof attestations</li>
-        <li style="margin: 10px 0; padding-left: 20px;">• Immutable recording of data fingerprints</li>
-        <li style="margin: 10px 0; padding-left: 20px;">• Cost-effective consensus without infrastructure overhead</li>
-    </ul>
-
-    <p>This targeted use of <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate's</a> capabilities provides <em>Towards Zero</em> with the decentralised trust layer it needs, while keeping its core systems independent and focused on their primary functions.</p>
+        <p>This targeted use of <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate's</a> capabilities provides <em>Towards Zero</em> with the decentralised trust layer it needs, while keeping its core systems independent and focused on their primary functions.</p>
+    </div>
 </section>
 
 <section style="text-align: center;">
@@ -342,6 +390,48 @@
         </div>
     </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var triggers = document.querySelectorAll('.collapsible-trigger');
+
+    triggers.forEach(function(trigger) {
+        // Add click listener to each trigger
+        trigger.addEventListener('click', function() {
+            // Toggle the 'active' class on the trigger itself (for the +/- icon)
+            this.classList.toggle('active');
+
+            // Find the next element, which should be the content wrapper
+            var content = this.nextElementSibling;
+
+            // Check if it's the correct content wrapper and toggle its 'active' class
+            if (content && content.classList.contains('collapsible-content')) {
+                 content.classList.toggle('active'); // This triggers the CSS max-height transition
+            }
+        });
+
+        // --- Optional: Start with sections collapsed ---
+        // By default, the CSS handles starting collapsed.
+        // If you wanted a specific section (e.g., the first H1 section) to start OPEN,
+        // you could add the 'active' class to its trigger and content div in the HTML directly.
+        // Example:
+        // <h1 class="collapsible-trigger active">The Paries Vision</h1>
+        // <div class="collapsible-content active"> ... </div>
+
+        // Ensure content divs visually match the initial state (collapsed unless 'active' class is present)
+        var initialContent = trigger.nextElementSibling;
+         if (initialContent && initialContent.classList.contains('collapsible-content')) {
+            if (!trigger.classList.contains('active')) {
+                // CSS rule .collapsible-content handles max-height: 0;
+            } else {
+                 // If trigger is active, set initial max-height (needed if JS runs after paint)
+                 initialContent.style.maxHeight = initialContent.scrollHeight + 'px';
+            }
+         }
+         // --- End Optional Section ---
+    });
+});
+</script>
 
 </body>
 </html>
