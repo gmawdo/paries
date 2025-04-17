@@ -179,16 +179,20 @@
 <section>
     <div class="header-with-image collapsible-trigger">
         <img src="fact-fake.jpg" alt="Fake or Fact?" style="height: 40px;">
-        <h1>Don't Trust, Verify</h1>
+        <h1>Automated Verification</h1>
     </div>
     <div class="collapsible-content"> 
-        <p>In an interconnected world where both goods and data move across borders, trust should not be assumed—it should be <strong>proven</strong>. 
-        At Paries, we are building a framework to ensure that whether you're verifying a digital transformation in a virtual world or tracking a global shipment, 
+        <p>In a globally connected world where goods and data flow freely across borders, relying solely on human and 
+            organisational trust is no longer sufficient. Traditional financial audits—an age-old practice—have shown 
+            their limitations in this context. Machine-led attestation is becoming increasingly valuable, offering the 
+            ability to <strong>prove</strong> and continuously monitor each step of interconnected operations through automated, 
+            real-time verification.</p> 
+        <p>At Paries, we have built a light weight framework to ensure that whether you're verifying a digital transformation in a virtual world or tracking a global shipment, 
         the proof is always in the system. However, not all use-cases require the full breadth of our framework; users can tactically pick and mix components
         to suit their specific needs.</p>
         <p>What we believe makes Paries notable — and maybe unique right now — is the combination of:</p>
         <ul>
-            <li>Formal verification (for trust in the system itself)</li>
+            <li>Formal verification (for strong level of confidence in the system itself)</li>
             <li>Zero-knowledge proofs (to attest to privacy-preserving integrity)</li>
             <li>Focus on telemetry + data workflows (real-world stuff, not just tokens)</li>
         </ul>
@@ -198,11 +202,11 @@
 <section>
     <div class="header-with-image collapsible-trigger">
         <img src="build.png" alt="Fake or Fact?" style="height: 60px;">
-        <h1>How Paries builds Proof Systems for Trust & Transparency</h1>
+        <h1>How Paries builds Proof Systems for Traceability</h1>
     </div>
     <div class="collapsible-content"> 
         <p>We use our lightweight and standards based framework named <em>Towards Zero</em> -- it has at its core a strong focus on <strong>proof-of-origin</strong> and <strong>proof-of-computation</strong> resulting in
-            verifiable data provenance — a big step beyond typical uses of ZKPs.</p>
+            verifiable data provenance — a big step beyond typical uses of Zero Knowledge Proofs (ZKPs) today. More of our foundational technologies are described below.</p>
 
         <p>We develop systems that can mathematically prove that a dataset was derived from known sources and that any transformations applied to it were performed
             according to defined rules. Proofs unlock a new era of verifiable outcomes across industries — whether it's compliance, supply chain transparency, enterprise
@@ -290,7 +294,7 @@
 <section>
     <div class="header-with-image collapsible-trigger">
         <img src="foundations.jpg" alt="Fake or Fact?" style="height: 60px;">
-        <h1>Relevant Foundational Technologies in the ZKP Industry</h1>
+        <h1>Foundational Technologies utilised by <em>Towards Zero</em></h1>
     </div>
     <div class="collapsible-content">  
         <p>In the field of Zero-Knowledge Proof (ZKP) technologies, Paries utilises several foundational systems and libraries that are leading the way for advanced applications. Notable examples include RISC Zero,
@@ -336,7 +340,9 @@
         <h2>🔍 <a href="https://verus-lang.github.io/verus/guide/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Verus</a></h2>
         <ul>
             <li><strong>Focus:</strong> Verifying the correctness of Rust code through static analysis and theorem proving.</li>
-            <li><strong>Relevance to Paries:</strong> Verus provides a robust framework for ensuring the functional correctness of low-level systems code, which is crucial for the integrity and reliability of Paries' cryptographic proof systems. By leveraging Verus, Paries can enhance the security and trustworthiness of its software components, aligning with the company's commitment to privacy, security, and data control.</li>
+            <li><strong>Relevance to Paries:</strong> Verus provides a robust framework for ensuring the functional correctness of low-level systems code, which is crucial for the
+                integrity and reliability of Paries' cryptographic proof systems. By leveraging Verus, Paries can enhance the security and confidence levels of its software 
+                components, aligning with the company's commitment to privacy, security, and data control.</li>
         </ul>
     </div>
 </section>
@@ -344,15 +350,19 @@
 <section>
     <div class="header-with-image collapsible-trigger">
         <img src="blockchain-9998.svg" alt="An image of a blockchain" style="height: 60px;">
-        <h1>Where is the role of Blockchain in all this?</h1>
+        <h1>Does Blockchain have a role here?</h1>
     </div>
     <div class="collapsible-content"> 
         <p>As noted cryptographer <a href="https://en.wikipedia.org/wiki/Bruce_Schneier" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Bruce Schneier</a> points
-            out, <a href="https://www.schneier.com/essays/archives/2019/02/theres_no_good_reaso.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">there's no good reason to trust blockchain.</a>
-            However Paries believes blockchain should fundamentally be viewed as a decentralised public record that leverages robust, industry-standard cryptographic techniques combined with
-            various consensus approaches to facilitate <em>Verification by Many</em>. Its technological foundation makes blockchain an excellent solution for the privacy preserving public storage of data fingerprints and proofs.
-            In short a means of publication and verification as a service.</p>
-            <p>Furthermore, we should view this as a step toward a more trustworthy and automated model for audit and transparency. Just consider the state of corporate accounting today—where the outdated practice of double-entry 
+            out, <a href="https://www.schneier.com/essays/archives/2019/02/theres_no_good_reaso.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">there's no good
+                reason to trust blockchain.</a>
+            However Paries does believe that Blockchain should be fundamentally viewed as a decentralised public record that leverages robust, industry-standard cryptographic techniques
+            combined with various consensus approaches to facilitate <em>Verification by Many</em>.</p>
+            <p>Its technological foundation makes blockchain an excellent solution for the privacy preserving public
+                storage of data fingerprints and proofs. In short a means of publication and verification as a service.
+            Furthermore, we should view this as a step toward a more trustworthy and automated model for audit and
+            transparency.</p>
+            <p>Just consider the state of corporate accounting today—where the outdated practice of double-entry 
                 bookkeeping, policed by costly audit firms and shaped by management's subjective narratives, has repeatedly failed to prevent major scandals. From Enron and WorldCom to Wirecard and Carillion, these high-profile 
                 failures highlight how easily traditional "trusted" systems can be manipulated, often at immense cost to shareholders and the public.</p>
         
@@ -385,7 +395,9 @@
             <li style="margin: 10px 0; padding-left: 20px;">• Cost-effective consensus without infrastructure overhead</li>
         </ul>
 
-        <p>This targeted use of <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate's</a> capabilities provides <em>Towards Zero</em> with the decentralised trust layer it needs, while keeping its core systems independent and focused on their primary functions.</p>
+        <p>This targeted use of <a href="https://substrate.io/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Substrate's</a> 
+            capabilities provides <em>Towards Zero</em> with the decentralised public record layer it needs, while keeping its core systems independent and focused on their primary 
+            functions.</p>
     </div>
 </section>
 
