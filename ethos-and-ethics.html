@@ -3,50 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethos & Ethics</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path points to your theme's CSS file -->
+    <title>Ethos & Ethics - Paries Holdings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            font-family: sans-serif;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #222;
+        }
+        h2 {
+            color: #222; 
+            margin-bottom: 1px; 
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .collapsible-trigger {
+            cursor: pointer;
+            position: relative;
+            padding-left: 25px;
+            user-select: none;
+        }
+        .collapsible-trigger::before {
+            content: '+';
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            font-size: 1.2em;
+            width: 15px;
+            text-align: center;
+        }
+        .collapsible-trigger.active::before {
+            content: '−';
+        }
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .collapsible-content.active {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Include your site's navigation header here -->
-    </header>
 
-    <main>
-        <h1 class="p-header-text">Ethos & Ethics</h1>
-        <p>Data in the digital age is what fossil fuels were in the industrial age. It is what drives the global economy. Paries was founded and built on three underpinning
-            principles: the inalienable rights of individuals and entities to privacy, security, and control of their data. We strive to support these principles daily
-            in what we do, what we make, and what we sell.</p>
-        
-        <h2 class="p-header-text">Duties of Care & Loyalty</h2>
-        <p>Duty of Care is our commitment to act fairly for the long-term benefits of all our stakeholders, whether shareholders, customers, employees, or partners.
-            Duty of Loyalty is our obligation to act in a manner that is always in the sole and best interests of the company.
-        </p>
+<header style="display: flex; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto;">
+    <div style="flex: 1; font-size: 36px; padding: 20px; text-align: right; max-width: 700px;">
+        Paries – The Power of Provenance & Proof
+    </div>
+    <img src="trace-polynomials.svg" alt="Polynomial trace commitments" style="height: 150px; margin-left: -5px;">
+</header>
 
-        <h2 class="p-header-text">Ethical Hacking</h2>
-        <p>As a company operating in the security domain, we may engage in white hat hacking activities while consulting for customers or third parties, or while
-            testing our own products and services to expose cyber vulnerabilities. Any Paries hacking activities will be consistent with the
-            Certified Ethical Hacker (CEH) credentialing, such as GCHQ GCT, ANSI 17024, and/or US DoD Directive 8570.</p>
-        
-        <h2 class="p-header-text">IT</h2>
-        <p>Paries’ IT embraces industry-leading cybersecurity principles such as “Zero Trust Networks” and “Software Defined Perimeter,” or other methodologies restricting access on a
-            “need-to-know” basis, and multi-factor or ZKP authentication. These policies are regularly reviewed and updated by the management team.</p>
-        <p>To foster the most secure environment, all Paries employees will be restricted to using only selected Linux servers, selected Mac laptops, selected iPhone and iPad
-            tablets, and de-Googled Android phones, all of which use only company-approved applications. Of course, we also use Paries products and services in the execution of
-            our work (e.g. VerifiedVault).</p>
-        
-        <h2 class="p-header-text">Customers & Partners</h2>
-        <p>Paries remains committed to its customers and partners for the long term. The technology industry is built around ecosystems that must work together to create sustainable solutions.
-            As a for-profit entity, we strive to achieve the optimum short, medium, and long-term profitability for our shareholders while working closely and in a balanced way
-            with customers and partners to ensure their businesses are also sustainable in the longer term.</p>
+<section>
+    <h1 class="p-header-text">Ethos & Ethics</h1>
+    <p>Data in the digital age is what fossil fuels were in the industrial age. It's what drives the global economy. Paries was founded and built on three underpinning principles: the inalienable rights of individuals and entities to privacy, security, and control of their data. We strive to support these principles daily in what we do, what we make and what we sell.</p>
+    
+    <h2 class="p-header-text collapsible-trigger">Duties of Care & Loyalty</h2>
+    <div class="collapsible-content">
+        <p>Duty of Care is our commitment to act fairly for the long-term benefits of all our stakeholders, whether shareholders, customers, employees or partners.</p>
+        <p>Duty of Loyalty is our obligation to act in a manner that is always in the sole and best interests of the company. Employees and directors must declare to the company any possible conflicts of interest and abide by the company's policy to handle these conflicts. Relatively minor conflicts of interest may require an employee or director to recuse themselves from participation in some aspect of the business. Severe conflicts of interest may require separation from the business.</p>
+    </div>
 
-        <h2 class="p-header-text">Our Team</h2>
-        <p>We are planning on growing the team, and as an intellectual capital company, our people and our culture are our greatest assets. We believe in meritocracy, rewarding results, and investing in our talent to
-            develop our team’s potential to the fullest.</p>
-        
-    </main>
+    <h2 class="p-header-text collapsible-trigger">Ethical Hacking</h2>
+    <div class="collapsible-content">
+        <p>As a security company, we may engage in white hat hacking activities while consulting to customers or third parties or indeed testing our own products and services to expose cyber vulnerabilities. Any Paries hacking activities will be consistent with the Certified Ethical Hacker (CEH) credentialing such as GCHQ GCT, ANSI 17024, and/or US DoD Directive 8570.</p>
+    </div>
 
-    <footer>
-        <!-- Include your site's footer here -->
-    </footer>
+    <h2 class="p-header-text collapsible-trigger">IT</h2>
+    <div class="collapsible-content">
+        <p>Paries's IT embraces industry-leading cyber security principles such "Zero Trust Networks", "Software Defined Perimeter" or other methodologies restricting access on a "needs to know" basis, and multi-factor authentication. These policies are regularly reviewed and updated by the executive management team.</p>
+        <p>To foster the most secure environment, all Paries employees will be restricted to use only selected Linux Servers, selected Mac and PC laptops, selected Android and iPad tablets, and de-Googled Android phones all of which that use only company approved applications. Of course, we also use Paries own products and services in the execution of our work.</p>
+    </div>
+
+    <h2 class="p-header-text collapsible-trigger">Customers & Partners</h2>
+    <div class="collapsible-content">
+        <p>Paries is committed to its customers and partners for the long-term. The technology industry is built around ecosystems that must work together to create sustainable solutions. As a for-profit entity, we strive to achieve the optimum short, medium and long-term profitability for our shareholders whilst working closely and in a balanced way with customers and partners to ensure their businesses are also sustainable in the longer-term.</p>
+    </div>
+
+    <h2 class="p-header-text collapsible-trigger">Competitors & Collaborators</h2>
+    <div class="collapsible-content">
+        <p>Paries believes tough but fair competition always creates the best solutions and enjoys its reputation as a tough but fair competitor.</p>
+        <p>In the technology industry, competitors can often also be collaborators, partnering to optimize sustainable ecosystems. We therefore subscribe to the principle of "coopetition", wherever appropriate.</p>
+    </div>
+
+    <h2 class="p-header-text collapsible-trigger">Our Team</h2>
+    <div class="collapsible-content">
+        <p>As an intellectual capital company, our people and our culture are our greatest assets. We believe in meritocracy, rewarding results and investing in our talent to develop our team's potential to the full.</p>
+    </div>
+</section>
+
+<footer>
+    <div style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <a href="index.html" style="text-decoration: none; color: inherit; position: absolute; left: 0;">← Back to Home</a>
+        <div style="flex-grow: 1; text-align: center;">
+            <p>&copy; 2013 - 2025 Paries Holdings. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var triggers = document.querySelectorAll('.collapsible-trigger');
+
+    triggers.forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            var content = this.nextElementSibling;
+            if (content && content.classList.contains('collapsible-content')) {
+                content.classList.toggle('active');
+            }
+        });
+
+        var initialContent = trigger.nextElementSibling;
+        if (initialContent && initialContent.classList.contains('collapsible-content')) {
+            if (!trigger.classList.contains('active')) {
+                // CSS rule .collapsible-content handles max-height: 0;
+            } else {
+                initialContent.style.maxHeight = initialContent.scrollHeight + 'px';
+            }
+        }
+    });
+});
+</script>
+
 </body>
 </html> 
