@@ -85,12 +85,46 @@
             border-bottom: 1px solid #e0e0e0;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 15px;
+        }
+
+        .use-case-header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-grow: 1;
+        }
+
+        .use-case-expand {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .use-case-expand:hover {
+            background: #e0e0e0;
         }
 
         .use-case-content {
             padding: 20px;
             background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .use-case-content.active {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
         }
 
         .use-case-logo {
@@ -215,8 +249,11 @@
         <div class="use-cases-container">
             <div class="use-case">
                 <div class="use-case-header">
-                    <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 18px; vertical-align: middle; margin-right: 10px;">
-                    <h2><a href="https://edenconsignmenttracking.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Eden Consignment Tracking</a></h2>
+                    <div class="use-case-header-left">
+                        <img src="cupa.png" alt="Cambridge University Press & Assessment" style="height: 18px;">
+                        <h2><a href="https://edenconsignmenttracking.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Eden Consignment Tracking</a></h2>
+                    </div>
+                    <div class="use-case-expand">+</div>
                 </div>
                 <div class="use-case-content">
                     <p class="subheading">Real-world application of <em>Towards Zero</em></p>
@@ -228,8 +265,11 @@
 
             <div class="use-case">
                 <div class="use-case-header">
-                    <img src="codasip.svg" alt="Codasip" style="height: 23px; vertical-align: middle; margin-right: 10px;">
-                    <h2>Capability-Based Filesystem</h2>
+                    <div class="use-case-header-left">
+                        <img src="codasip.svg" alt="Codasip" style="height: 23px;">
+                        <h2>Capability-Based Filesystem</h2>
+                    </div>
+                    <div class="use-case-expand">+</div>
                 </div>
                 <div class="use-case-content">
                     <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
@@ -242,8 +282,11 @@
 
             <div class="use-case">
                 <div class="use-case-header">
-                    <img src="donttrust.png" alt="Don't Trust, Verify" style="height: 38px; vertical-align: middle; margin-right: 10px;">
-                    <h2><a href="https://verifiedvault.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">VerifiedVault Virtual Data Room</a></h2>
+                    <div class="use-case-header-left">
+                        <img src="donttrust.png" alt="Don't Trust, Verify" style="height: 38px;">
+                        <h2><a href="https://verifiedvault.co.uk" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Verified-Vault Virtual Data Room</a></h2>
+                    </div>
+                    <div class="use-case-expand">+</div>
                 </div>
                 <div class="use-case-content">
                     <p class="subheading">Virtual-world application of <em>Towards Zero</em></p>
@@ -262,8 +305,11 @@
 
             <div class="use-case">
                 <div class="use-case-header">
-                    <img src="sel4.svg" alt="seL4" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-                    <h2><a href="blueprint.html" style="color: inherit; text-decoration: underline;">Digital Concrete for AI Blueprint</a></h2>
+                    <div class="use-case-header-left">
+                        <img src="sel4.svg" alt="seL4" style="height: 30px;">
+                        <h2><a href="blueprint.html" style="color: inherit; text-decoration: underline;">Digital Concrete for AI Blueprint</a></h2>
+                    </div>
+                    <div class="use-case-expand">+</div>
                 </div>
                 <div class="use-case-content">
                     <p class="subheading">A commissioned blueprint based on <em>Towards Zero</em></p>
@@ -283,9 +329,19 @@
         <h1>Foundational Technologies utilised by <em>Towards Zero</em></h1>
     </div>
     <div class="collapsible-content">  
-        <p>In the field of Zero-Knowledge Proof (ZKP) technologies, Paries utilises several foundational systems and libraries that are leading the way for advanced applications. Notable examples include RISC Zero,
-            zkOS, Arkworks, and Winterfell, each offering distinct capabilities that align with Paries' technical architectural goals. While many of these technologies are primarily focused on blockchain,
-            Paries aims to harness ZKP for broader and more immediate industry applications.</p>
+        <p>Zero-Knowledge Proof (ZKP) technologies broadly fall into two main categories: SNARKs (Succinct Non-interactive ARguments of Knowledge) and STARKs (Scalable Transparent ARguments of Knowledge). Both approaches leverage polynomial mathematics over carefully chosen finite fields at their core, but differ in their security assumptions and practical applications.</p>
+
+        <p>To create proofs of computation, there are several fundamental approaches:</p>
+        <ul>
+            <li><strong>Arithmetic Circuit Representations:</strong> Such as R1CS (Rank-1 Constraint Systems), which translate computations into systems of mathematical constraints</li>
+            <li><strong>Execution Trace Methods:</strong> Which directly capture and verify the state of compute registers during program execution</li>
+        </ul>
+
+        <p>Both approaches rely on polynomial operations within finite fields, where the choice of field is crucial for both security and performance. While traditional prime fields are common (as used in Winterfell's STARK implementation), towers of binary fields offer an alternative approach with potential performance advantages through closer alignment with hardware operations. Implementations like gnark, Neptune, and constantine provide optimized support for binary field towers. These fundamental approaches are complemented by various polynomial commitment schemes and proof composition techniques that enable different trade-offs between proof size, verification time, and trust assumptions.</p>
+
+        <p>At Paries, we leverage multiple implementations across this spectrum, recognizing that different approaches offer distinct advantages for various use cases.</p>
+
+        <p>Our technology stack includes several leading implementations and frameworks:</p>
 
         <h2>🧱 <a href="https://arkworks.rs/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Arkworks</a></h2>
         <ul>
@@ -438,6 +494,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
          }
          // --- End Optional Section ---
+    });
+
+    // Add handlers for use case expansion
+    document.querySelectorAll('.use-case-expand').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            const content = this.closest('.use-case-header').nextElementSibling;
+            const isActive = content.classList.contains('active');
+            
+            // Toggle active state
+            content.classList.toggle('active');
+            
+            // Update expand/collapse icon
+            this.textContent = isActive ? '+' : '−';
+        });
     });
 });
 </script>
